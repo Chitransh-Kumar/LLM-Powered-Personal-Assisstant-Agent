@@ -28,22 +28,17 @@ This assistant can:
 
 ---
 
-## System Architecture:
+## System Architecture
 
-User (Streamlit UI)
-
-        ↓
-Webhook Trigger (n8n)
-        ↓
-AI Agent (OpenAI LLM + System Prompt + Memory)
-        ↓
-Tool Selection
-        ↓
-External Tool Execution
-        ↓
-Response to Webhook
-        ↓
-Streamlit Interface Output
+| Layer | Component | Description |
+|------|------|------|
+| Interface Layer | Streamlit UI | User enters natural language requests |
+| Trigger Layer | n8n Webhook | Receives request and triggers workflow |
+| Reasoning Layer | AI Agent (OpenAI + Memory) | Interprets intent and decides which tool to use |
+| Decision Layer | Tool Selection | Maps user intent to the correct tool |
+| Execution Layer | External Tools | Gmail, Calendar, Docs, Tasks, Sheets, Search |
+| Response Layer | Webhook Response | Sends processed response back |
+| Output Layer | Streamlit UI | Displays final result to the user |
 
 
 ---
