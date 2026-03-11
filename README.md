@@ -78,9 +78,9 @@ Depending on the user intent, the agent invokes one of the following capability 
 
 A. Web Search
 
-    - Tool: Google Search / SerpAPI
+- Tool: Google Search / SerpAPI
 
-    - Use case: answering live queries, factual lookups, or current information requests
+- Use case: answering live queries, factual lookups, or current information requests
 
 B. Calendar Management
 
