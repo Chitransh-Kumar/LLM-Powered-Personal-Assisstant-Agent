@@ -31,6 +31,7 @@ This assistant can:
 ## System Architecture:
 
 User (Streamlit UI)
+
         ↓
 Webhook Trigger (n8n)
         ↓
