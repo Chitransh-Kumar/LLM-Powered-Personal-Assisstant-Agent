@@ -140,7 +140,7 @@ if user_message:
     with st.spinner("Assistant is thinking..."):
 
         response = requests.post(
-            "http://localhost:5678/webhook/ab3440be-1e4a-47d7-ba30-2e9f955dbebd",
+            "http://localhost:5678/webhook/", # Add production URL here
             json={"message": user_message}
         )
 
